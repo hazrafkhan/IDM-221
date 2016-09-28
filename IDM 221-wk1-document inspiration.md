@@ -1,0 +1,12 @@
+# IDM-221 | Homework 1: Document Inspiration
+
+## Site 1: [Solve the Riddle!](http://notpron.org/notpron/levelone.htm)
+* This website expected us to solve a riddle, based on multiple levels which is quite similar to the “Dooors” and “100 Doors” game app on mobile devices. However, what I find interesting about this site is not because of the gameplay itself, but how it utilizes the URL and even the source code for the riddle. In order to progress to the next level, user need to be familiar with the source code, which is totally unlike many other riddle games. Although the interface is very simple and dull, I find it suitable with the nature of this game. The site utilizes basic html and web programming in a very creative and novel way to interact with its user. The only thing I dislike about this game is sometimes the clues can be very vague and hard to solve.
+
+## Site 2: [Pixel Thoughts](	http://www.pixelthoughts.co/)
+* This is a simple yet brilliant website that let us meditate for 60 seconds. Just enter in any thought that is pestering us and the watch it shrinks and finally washed away with the stars. When I have too many homework in hand, I just type in “homework” in there and oddly enough, it helped me reduce my stress. What I love about this site is the integration between the font, music and the animation of the stars. Despite of its simplicity, the harmony between these three elements help the site to work great. Functionality and content are not just the elements that make a website great. Appearance and synchronicity of smaller elements, such as fonts and animation, are also crucial for an effective website.
+
+## Site 3: [100 Stars](	http://stars.chromeexperiments.com/)
+* This is a very cool website that shows just how tiny part of the universe we are. The site allows us to freely toggle the 3D space galaxy and zoom in and out the Milky Way freely. The element that I like the most about this site is how interactive and virtually appealing it is. The animation of the stars when dragging the whole universe around seems very realistic and the background music also captures the vibe of being in outer space. Another awesome feature that I like is I can take a tour throughout the Milky Way galaxy and learn all about its contents and history. This is a must-visit website and I would really interested in learning the coding behind it as well as to understand how it works.
+
+
