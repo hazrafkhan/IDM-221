@@ -28,14 +28,10 @@ header {
 }
 
 .left-nav ul li a{
-	color: #c8cece;
+	color: #fff;
 	font-size: 1.5rem;
 	font-weight: normal;
 	text-decoration: none;
-}
-
-.left-nav ul li a:hover {
-	color: #63f0fd;
 }
 
 .mid-nav {
@@ -48,10 +44,6 @@ header {
 .mid-nav img{
 	height: 55.5px;
 	width: 100px;
-}
-
-.mid-nav :hover {
-	color: #63f0fd;
 }
 
 .right-nav {
@@ -71,16 +63,13 @@ header {
 }
 
 .right-nav ul li a{
-	color: #c8cece;
+	color: #fff;
 	font-size: 1.5rem;
 	font-weight: normal;
 	text-decoration: none;
 }
 
-.right-nav ul li a:hover {
-	color: #63f0fd;
-}
-
-.active {
-	color: #63f0fd !important;
+/*---hover---*/
+.active, .right-nav ul li a:hover, .left-nav ul li a:hover {
+	color: #e15f5f!important;
 }
