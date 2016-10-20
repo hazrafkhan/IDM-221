@@ -83,6 +83,10 @@ main {
 	background-color: #3b73e6;
 }
 
+.box-5-text{
+	padding-left: 50px;
+}
+
 .box-6 {
 	float: left;
 	text-align: center;
@@ -98,7 +102,7 @@ main {
 }
 
 .box-img img{
-	height: 500px;
+	height: 960px;
   }
 
   /*hover*/
