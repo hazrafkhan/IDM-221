@@ -9,9 +9,18 @@ main a{
 	text-decoration: none;
 }
 
-main h1, main h2, main h3{
+main h1{
 	color: #a73d3d;
 	font-weight: bold;
+}
+
+main h2, main h3{
+	color: #464646;
+	font-weight: bold;
+}
+
+main p, main li{
+	color: #464646;
 }
 
 main a:hover{

@@ -144,6 +144,7 @@ main {
 .box-5-text h3{
 	color: #fff;
 	margin: 0rem;
+	font-style: italic;
 }
 
 .box-5-text p{
@@ -200,12 +201,8 @@ main {
 	background-color: #e24f4f;
 }
 
-.box-resume:hover {
-	border-color: #63f0fd !important;
-}
-
-.box-contact:hover {
-	border-color: #63f0fd !important;
+.box-resume:hover, .box-contact:hover {
+	border-color: #e24f4f !important;
 }
 
 .box-nav a:hover{
