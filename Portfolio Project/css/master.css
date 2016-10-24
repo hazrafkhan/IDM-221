@@ -1,0 +1,19 @@
+.main-col {
+	margin: 0 auto;
+	max-width: 1400px;
+	width: 100%;
+}
+
+main a{
+	color: #737ce6;
+	text-decoration: none;
+}
+
+main h1, main h2, main h3{
+	color: #a73d3d;
+	font-weight: bold;
+}
+
+main a:hover{
+	color: #e15f5f;
+}

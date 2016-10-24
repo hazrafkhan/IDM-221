@@ -166,22 +166,24 @@ main {
 .box-img {
 	float: left;
 	width: 40%;
+	height: 100%;
 }
 
 .box-img img{
-	height: 960px;
-	width: 764px;
-  }
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
 
- /*page link font*/
- .page-link:link, .page-link:visited {
- 	color: #292c2f;
- 	text-decoration: none;
- 	font-weight: bold;
- 	font-size: 1.5rem;
- }
+/*page link font*/
+.page-link:link, .page-link:visited {
+	color: #292c2f;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
 
-  /*hover*/
+/*hover*/
 .box-2:hover {
 	background-color: #e24f4f;
 }
