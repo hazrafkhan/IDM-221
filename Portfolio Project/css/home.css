@@ -162,6 +162,7 @@ main {
 	transition: background-color 0.3s ease;
 }
 
+/*image css*/
 .box-img {
 	float: left;
 	width: 40%;
@@ -169,6 +170,7 @@ main {
 
 .box-img img{
 	height: 960px;
+	width: 764px;
   }
 
  /*page link font*/
