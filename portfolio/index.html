@@ -8,10 +8,49 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <body>
+
+	<!-- Smooth Scrolling Java Script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	      	scrollTop: $(hash).offset().top
+	      }, 800, function(){
+
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	     });
+	    } // End if
+	 });
+	});
+
+		function scroll(){
+			var topPos = document.getElementById('hasstudio').offsetTop;
+			document.getElementById('container').scrollTop = topPos-10;
+		}
+
+
+	</script>
+	<!-- Smooth Scrolling Ends-->
+
 	<div class="site-wrapper background-white ">
 
 		<section class="background-dark block block-hero window-height " >
@@ -61,18 +100,28 @@
 				</nav>
 			</div>
 
-			<div class="window-height flow block section-content font-raleway">
-				<div class="about-img">
-					<img src="images/me.png" alt="Hazraf">
-				</div>
-				<div class="about-text">
-					<h1 class="text-red">Mohammad Hazraf Khan</h1>
-					<p>Hello. My name is Mohammad Hazraf Khan. I'm a Mechanical Engineering student studying in Drexel University, Philadelphia. I have many work experiences and participated in undergraduate research programme: Assistant Engineer Co-op at Delta Connects Inc., Fire Protection Engineer Co-op at Ewingcole, Drexel Biofabrication Lab, Drexel Thermal Design Lab, Mechanical Engineering Academic Tutor, etc.</p>
-					<p>I'm minoring in Interactive Digital Media. So I also have skills in graphic design (photoshop, illustrator, etc), web development (html and css), user interface design, photo and video editing. Though designing is only my minor course, I won many competitions related to digital arts and videography - US East Coast Presidential Councial Logo Design Competition, NAMSA Project Etiquet Video Competition, multiple t-shirt design competitions, etc</p>
-					<p>Due to skills in multiple different areas, I'm also involve in entrepreneurship activities. On November 2014, I Co-founded HAS Art &amp; Photography Studios (wedding photography and graphic design services) and later developed a website for listing homestays in Malaysia, Tidoq.com. I also participated in idea pitching competition organized by Drexel Baiada Institute of entrepreneurship.<p>
-						<p>Below are some examples of previous work which I did in and outside of the campus. Further details about my work can be seen in my <a href="https://www.linkedin.com/in/hazrafkhan" target="blank">LinkedIn</a> profile. Please contact me at any of the links below if you wish to contact me for any professional work opportunities or if you just want to chat.</p>
+			<div style="overflow: hidden;">
+				<div class="window-height flow block section-content font-raleway">
+					<div class="about-img">
+						<img src="images/me.png" alt="Hazraf">
+					</div>
+					<div class="about-text">
+						<h1 class="text-red">Mohammad Hazraf Khan</h1>
+						<p>
+							Hello. My name is Mohammad Hazraf Khan. I'm a Mechanical Engineering student studying in Drexel University, Philadelphia. I have many work experiences and participated in undergraduate research programme: Assistant Engineer Co-op at Delta Connects Inc., Fire Protection Engineer Co-op at Ewingcole, Drexel Biofabrication Lab, Drexel Thermal Design Lab, Mechanical Engineering Academic Tutor, etc.
+						</p>
+						<p>
+							I'm minoring in Interactive Digital Media. So I also have skills in graphic design (photoshop, illustrator, etc), web development (html and css), user interface design, photo and video editing. Though designing is only my minor course, I won many competitions related to digital arts and videography - US East Coast Presidential Councial Logo Design Competition, NAMSA Project Etiquet Video Competition, multiple t-shirt design competitions, etc
+						</p>
+						<p>
+							Due to skills in multiple different areas, I'm also involve in entrepreneurship activities. On November 2014, I Co-founded HAS Art &amp; Photography Studios (wedding photography and graphic design services) and later developed a website for listing homestays in Malaysia, Tidoq.com. I also participated in idea pitching competition organized by Drexel Baiada Institute of entrepreneurship.
+						</p>
+						<p>
+							Below are some examples of previous work which I did in and outside of the campus. Further details about my work can be seen in my <a href="https://www.linkedin.com/in/hazrafkhan" target="blank">LinkedIn</a> profile. Please contact me at any of the links below if you wish to contact me for any professional work opportunities or if you just want to chat.
+						</p>
 					</div>
 				</div>
+			</div>
 
 			</section>
 
@@ -89,19 +138,20 @@
 								<a href="#portfolio" class="before">Work</a>
 							</li>
 							<li>
-								<a href="#contact" class="before">Contact</a>
+								<a href="#hasstudio" class="before" onclick="scroll()" >Contact</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 
-				<div class="block window-height project flow font-raleway">
+				<div style="overflow: hidden" class="font-raleway">
+					<div id="container" class="block window-height project flow font-raleway">
 
-				<!-- Project template 
+
+					<!-- Project template 
 					<div class="project-img" style="top: #00%;">
 						<img src="images/work/ewingcole.jpg" alt="ewingcole">
-						<div class="window-height window-width img-icon">
-							<img src="images/eng_icon.png" alt="engineering">
+						<div class="window-height window-width">
 							<div class="project-text">
 								<h1>Fire Protection Engineering Co-op</h1>
 								<h2>Ewingcole, Philadelphia, PA</h2>
@@ -120,8 +170,7 @@
 
 					<div class="project-img">
 						<img src="images/work/deltaconnects.jpg" alt="delta connects">
-						<div class="window-height window-width img-icon">
-							<img src="images/eng_icon.png" alt="engineering">
+						<div class="window-height window-width">
 							<div class="project-text">
 								<h1>Application Engineering Co-op</h1>
 								<h2>Delta Connects Inc., New Brunswick, NJ</h2>
@@ -131,9 +180,6 @@
 									</li>
 									<li>
 										Created start-up forms which consisted of controller’s I/O lists for HVAC Controls field testing
-									</li>
-									<li>
-										Produced submittals to go out to consulting engineering firms
 									</li>
 									<li>
 										Composed new acquired jobs schematics in AutoCAD based on Application Engineers’ designs
@@ -151,8 +197,7 @@
 
 					<div class="project-img" style="top: 100%;">
 						<img src="images/work/ewingcole.jpg" alt="ewingcole">
-						<div class="window-height window-width img-icon">
-							<img src="images/eng_icon.png" alt="engineering">
+						<div class="window-height window-width">
 							<div class="project-text">
 								<h1>Fire Protection Engineering Co-op</h1>
 								<h2>Ewingcole, Philadelphia, PA</h2>
@@ -176,8 +221,7 @@
 
 					<div class="project-img" style="top: 200%;">
 						<img src="images/work/ace.jpg" alt="drexel ace center">
-						<div class="window-height window-width img-icon">
-							<img src="images/eng_icon.png" alt="engineering">
+						<div class="window-height window-width">
 							<div class="project-text">
 								<h1>Academic Tutor</h1>
 								<h2>Drexel Academic Center for Engineer (ACE)</h2>
@@ -198,8 +242,7 @@
 
 					<div class="project-img" style="top: 300%;">
 						<img src="images/work/tidoq.jpg" alt="drexel ace center">
-						<div class="window-height window-width img-icon">
-							<img src="images/graphic_icon.png" alt="engineering">
+						<div class="window-height window-width">
 							<div class="project-text">
 								<h1>Tidoq.com - Homestay Listing Site (Malaysia)</h1>
 								<h2>Web Developer, Graphic Designer, Founder</h2>
@@ -221,10 +264,9 @@
 						</div>
 					</div>
 
-					<div class="project-img" style="top: 400%;">
+					<div id="hasstudio" class="project-img" style="top: 400%;">
 						<img src="images/work/hasstudio.jpg" alt="drexel ace center">
-						<div class="window-height window-width img-icon">
-							<img src="images/photo_icon.png" alt="engineering">
+						<div class="window-height window-width">
 							<div class="project-text">
 								<h1>HAS Art &amp; Photography Studio (HAS Studios)</h1>
 								<h2>Graphic Designer, Manager, Co-Founder</h2>
@@ -243,12 +285,14 @@
 						</div>
 					</div>
 
-
 				</div>
+			</div>
+
 			</section>
 
-			<section id="contact" class="half-height background-grey block">
+			<section id="contact" class="window-height background-grey block">
 
+				<!-- Social Icons HTML -->
 				<div class="contact-title">
 					<h2>Contact Me</h2>
 					<img src="images/contact.png" width="300" alt="contact me">
@@ -262,12 +306,28 @@
 					</ul>
 				</div>
 
+				<!-- Contact Form HTML -->
+				<div class="contact-form window-width">
+					<form class="cf" action="mail.php" method="post">
+						<div class="half left cf">
+							<input type="text" id="input-name" name="name" placeholder="Name">
+							<input type="email" id="input-email" name="email" placeholder="Email address">
+							<input type="text" id="input-subject" name="subject" placeholder="Subject">
+						</div>
+						<div class="half right cf">
+							<textarea name="message" id="input-message" placeholder="Message"></textarea>
+						</div>  
+						<input name="submit" type="submit" value="Submit" id="input-submit" class="submit">
+					</form>
+				</div>
+
 				<nav class="social">
 					<a href="https://www.facebook.com/mohammad.h.khan.5" ><img src="images/fb-icon.png" alt="fb logo"></a>
 					<a href="https://www.instagram.com/hazrafkhan/" ><img src="images/ig-icon.png" alt="instagram logo"></a>
 					<a href="https://www.linkedin.com/in/hazrafkhan" ><img src="images/li-icon.png" alt="linkedin logo"></a>
 				</nav>
 
+				<!-- Navigation Menu -->
 				<nav class="main-nav text-red font-roboto">
 					<ul class="hov-white">
 						<li>
@@ -285,10 +345,7 @@
 			</section>
 		</div>
 
-
-
-
-
 	</body>
 
 	</html>
+
