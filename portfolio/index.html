@@ -13,50 +13,17 @@
 </head>
 
 <body>
-
 	<!-- Smooth Scrolling Java Script-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-	  // Add smooth scrolling to all links
-	  $("a").on('click', function(event) {
-
-	    // Make sure this.hash has a value before overriding default behavior
-	    if (this.hash !== "") {
-	      // Prevent default anchor click behavior
-	      event.preventDefault();
-
-	      // Store hash
-	      var hash = this.hash;
-
-	      // Using jQuery's animate() method to add smooth page scroll
-	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-	      $('html, body').animate({
-	      	scrollTop: $(hash).offset().top
-	      }, 800, function(){
-
-	        // Add hash (#) to URL when done scrolling (default click behavior)
-	        window.location.hash = hash;
-	     });
-	    } // End if
-	 });
-	});
-
-		function scroll(){
-			var topPos = document.getElementById('hasstudio').offsetTop;
-			document.getElementById('container').scrollTop = topPos-10;
-		}
-
-
-	</script>
+	<script src="script/scripts.js"></script>
 	<!-- Smooth Scrolling Ends-->
 
-	<div class="site-wrapper background-white ">
+	<div class="background-white "> <!--Specifying background color-->
 
-		<section class="background-dark block block-hero window-height " >
+		<section class="background-dark block block-hero window-height " > <!-- Hero section block -->
 
 			<div class="block-title text-white">
-				<h1 class="font-raleway fs-nav">MOHAMMAD HAZRAF KHAN</h1>
+				<h1 class="font-raleway fs-nav">IMPROVISE ~ ADAPT ~ OVERCOME</h1>
 			</div>
 
 			<div class="hero-img">
@@ -65,7 +32,7 @@
 			</div>
 
 
-			<nav class="main-nav text-red font-roboto">
+			<nav class="main-nav text-red font-roboto"> <!-- Page navigation -->
 				<ul class="hov-white">
 					<li>
 						<a href="#about" >About</a>
@@ -81,9 +48,9 @@
 
 		</section>
 
-		<section id="about" class="block window-height background-white">
+		<section id="about" class="block window-height background-white"> <!-- About section block -->
 
-			<div class="about-title background-red">
+			<div class="about-title background-red"> <!-- Page Navigation -->
 				<img src="images/about.svg" width="255" alt="about">
 				<nav class="main-nav text-black">
 					<ul class="hov-white">
@@ -100,8 +67,8 @@
 				</nav>
 			</div>
 
-			<div style="overflow: hidden;">
-				<div class="window-height flow block section-content font-raleway">
+			<div style="overflow: hidden;"> <!-- Outside block to hide second scrollbar -->
+				<div class="window-height flow block section-content font-raleway"> 
 					<div class="about-img">
 						<img src="images/me.png" alt="Hazraf">
 					</div>
@@ -125,11 +92,39 @@
 
 			</section>
 
-			<section id="portfolio" class="window-height background-white">
+			<section id="portfolio" class="window-height background-white"> <!-- Work section block -->
 
-				<div class="about-title background-white">
+				<div class="about-title background-white work-section">
+					<img class="work-background" src="images/work_background.jpg" alt="work background">
 					<img src="images/work.svg" width="200" alt="work">
-					<nav class="main-nav text-black">
+
+					<nav class="work-nav text-black"> <!-- Work list navigation, edit when new work added -->
+						<ul class="hov-red">
+							<li>
+								<a href="#work1" onclick="scroll1()">Delta Connects</a>
+							</li>
+							<li>
+								<a href="#work2" class="before" onclick="scroll2()">Ewingcole</a>
+							</li>
+							<li>
+								<a href="#work3" class="before" onclick="scroll3()" >ACE Center</a>
+							</li>
+							<li>
+								<a href="#work4" class="before" onclick="scroll4()" >Tidoq.com</a>
+							</li>
+							<li>
+								<a href="#work5" class="before" onclick="scroll5()" >HAS Studios</a> 
+							</li>
+							<!-- Add new nav here for new work-->
+							<!--
+							<li>
+								<a href="#work6" class="before" onclick="scroll6()" >New-work-title</a> 
+							</li>
+							-->
+						</ul>
+					</nav>
+
+					<nav class="main-nav text-black"> <!-- Page Navigation -->
 						<ul class="hov-red">
 							<li>
 								<a href="#about" >About</a>
@@ -138,18 +133,18 @@
 								<a href="#portfolio" class="before">Work</a>
 							</li>
 							<li>
-								<a href="#hasstudio" class="before" onclick="scroll()" >Contact</a>
+								<a href="#contact" class="before">Contact</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 
-				<div style="overflow: hidden" class="font-raleway">
+				<div style="overflow: hidden" class="font-raleway"> <!-- Block for hidding second scrollbar -->
 					<div id="container" class="block window-height project flow font-raleway">
 
 
 					<!-- Project template 
-					<div class="project-img" style="top: #00%;">
+					<div id="work#" class="project-img" style="top: #00%;">
 						<img src="images/work/ewingcole.jpg" alt="ewingcole">
 						<div class="window-height window-width">
 							<div class="project-text">
@@ -168,7 +163,8 @@
 					</div>
 					-->
 
-					<div class="project-img">
+					 <!-- Work list block starts here -->
+					<div id="work1" class="project-img">
 						<img src="images/work/deltaconnects.jpg" alt="delta connects">
 						<div class="window-height window-width">
 							<div class="project-text">
@@ -195,7 +191,7 @@
 						</div>
 					</div>
 
-					<div class="project-img" style="top: 100%;">
+					<div id="work2" class="project-img" style="top: 100%;">
 						<img src="images/work/ewingcole.jpg" alt="ewingcole">
 						<div class="window-height window-width">
 							<div class="project-text">
@@ -219,7 +215,7 @@
 						</div>
 					</div>
 
-					<div class="project-img" style="top: 200%;">
+					<div id="work3" class="project-img" style="top: 200%;">
 						<img src="images/work/ace.jpg" alt="drexel ace center">
 						<div class="window-height window-width">
 							<div class="project-text">
@@ -240,7 +236,7 @@
 						</div>
 					</div>
 
-					<div class="project-img" style="top: 300%;">
+					<div id="work4" class="project-img" style="top: 300%;">
 						<img src="images/work/tidoq.jpg" alt="drexel ace center">
 						<div class="window-height window-width">
 							<div class="project-text">
@@ -264,7 +260,7 @@
 						</div>
 					</div>
 
-					<div id="hasstudio" class="project-img" style="top: 400%;">
+					<div id="work5" class="project-img" style="top: 400%;">
 						<img src="images/work/hasstudio.jpg" alt="drexel ace center">
 						<div class="window-height window-width">
 							<div class="project-text">
@@ -290,7 +286,7 @@
 
 			</section>
 
-			<section id="contact" class="window-height background-grey block">
+			<section id="contact" class="window-height background-grey block"> <!-- Contact section block -->
 
 				<!-- Social Icons HTML -->
 				<div class="contact-title">
@@ -308,7 +304,7 @@
 
 				<!-- Contact Form HTML -->
 				<div class="contact-form window-width">
-					<form class="cf" action="mail.php" method="post">
+					<form class="cf" action="script/mail.php" method="post">
 						<div class="half left cf">
 							<input type="text" id="input-name" name="name" placeholder="Name">
 							<input type="email" id="input-email" name="email" placeholder="Email address">
@@ -327,7 +323,7 @@
 					<a href="https://www.linkedin.com/in/hazrafkhan" ><img src="images/li-icon.png" alt="linkedin logo"></a>
 				</nav>
 
-				<!-- Navigation Menu -->
+				<!-- Page Navigation -->
 				<nav class="main-nav text-red font-roboto">
 					<ul class="hov-white">
 						<li>
@@ -346,6 +342,5 @@
 		</div>
 
 	</body>
-
 	</html>
 

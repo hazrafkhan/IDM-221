@@ -108,6 +108,9 @@ p a{
  	position: relative;
  	width: calc(50% + 15px);
  	left: 50%;
+ 	-webkit-box-shadow: inset 0px -47px 86px -44px rgba(0,0,0,0.41);
+   -moz-box-shadow: inset 0px -47px 86px -44px rgba(0,0,0,0.41);
+   box-shadow: inset 0px -47px 86px -44px rgba(0,0,0,0.41);
  }
 
 .flow{
@@ -255,11 +258,10 @@ p a{
 
 .about-img img{
 	position: absolute;
-	width: 30%;
+	height: 80%;
 	top: 50%;
 	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%);
 }
 
 .about-text{
@@ -286,6 +288,13 @@ p a{
 ##  ##  ## ##     ## ##    ##  ##   ##     ##    ## ##       ##    ## 
  ###  ###   #######  ##     ## ##    ##     ######  ########  ######  
  */
+.work-section{
+	overflow: hidden;
+}
+
+.work-background{
+	height: 100vh;
+}
 
  .project{
  	display: block;
@@ -299,6 +308,9 @@ p a{
  	width: 100%;
  	height: 100vh;
  	overflow-x: hidden;
+ 	-webkit-box-shadow: inset 0px -47px 86px -44px rgba(0,0,0,0.41);
+   -moz-box-shadow: inset 0px -47px 86px -44px rgba(0,0,0,0.41);
+   box-shadow: inset 0px -47px 86px -44px rgba(0,0,0,0.41);
  }
 
  .project-img img {
@@ -332,10 +344,39 @@ p a{
  .project-text ul li{
  	text-align: justify;
  	font-size: 1.08rem;
- 	margin-top: 1.05rem;
- 	margin-left: 48px;
- 	margin-right: 48px;
+ 	margin: 0.52rem 48px;
  }
+
+ /* Work Navigation*/
+ .work-nav{
+ 	font-family: 'Roboto', sans-serif;
+ 	position: absolute;
+ 	bottom: 35%;
+ 	width: 100%;
+ 	text-align: center;
+ }
+
+ .work-nav ul{
+ 	list-style: none;
+ }
+
+ .work-nav ul li{
+ 	display: inline-block;
+ }
+
+ .work-nav ul li .before:before{
+ 	content: '/';
+ 	padding: 0 12px 0 9px;
+ }
+
+ .work-nav ul li a{
+ 	display: inline-block;
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	font-weight: bold;
+ 	font-size: 1rem;
+ }
+
 
 /*
  ######   #######  ##    ## ########    ###     ######  ########     ######  ########  ######  
