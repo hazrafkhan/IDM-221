@@ -49,6 +49,10 @@ p a{
 	color: red;
 }
 
+h3{
+ 	visibility: hidden;
+ }
+
 
 /*  
  ######  ########    ###    ##    ## ########     ###    ########  ########  
@@ -77,8 +81,8 @@ p a{
  	background-color: #323232;
  }
 
- .half-height{
- 	height: 50vh;
+ .seventy-height{
+ 	height: 70vh;
  }
 
  .window-height{
@@ -108,13 +112,19 @@ p a{
  	position: relative;
  	width: calc(50% + 15px);
  	left: 50%;
- 	-webkit-box-shadow: inset 0px -47px 86px -44px rgba(0,0,0,0.41);
-   -moz-box-shadow: inset 0px -47px 86px -44px rgba(0,0,0,0.41);
-   box-shadow: inset 0px -47px 86px -44px rgba(0,0,0,0.41);
+ 	-webkit-box-shadow: inset 0 -47px 86px -44px rgba(0,0,0,0.41);
+   -moz-box-shadow: inset 0 -47px 86px -44px rgba(0,0,0,0.41);
+   box-shadow: inset 0 -47px 86px -44px rgba(0,0,0,0.41);
  }
 
 .flow{
 	overflow-y: auto;
+}
+
+.inner-shadow{
+	-webkit-box-shadow: inset 0 0 54px 40px rgba(0,0,0,0.63);
+	-moz-box-shadow: inset 0 0 54px 40px rgba(0,0,0,0.63);
+	box-shadow: inset 0 0 54px 40px rgba(0,0,0,0.63);
 }
 
 /*
@@ -158,7 +168,7 @@ p a{
    	font-family: 'Raleway', sans-serif;
    }
 
-
+   /* Font for buttons (merriwheather) specified in the css line code below*/
 
 /*
 ##     ##    ###    #### ##    ##    ##    ##    ###    ##     ## 
@@ -268,7 +278,7 @@ p a{
 	padding: 0 48px 100px;
 }
 
-.about-text h1{
+h1{
 	text-align: center;
 	margin-bottom: 30px;
 }
@@ -278,6 +288,85 @@ p a{
 	font-size: 1.4rem;
 	padding-bottom: 25px;
 }
+
+
+/* 
+ ######  ##    ## #### ##       ##        ######      ######  ########  ######  
+##    ## ##   ##   ##  ##       ##       ##    ##    ##    ## ##       ##    ## 
+##       ##  ##    ##  ##       ##       ##          ##       ##       ##       
+ ######  #####     ##  ##       ##        ######      ######  ######   ##       
+      ## ##  ##    ##  ##       ##             ##          ## ##       ##       
+##    ## ##   ##   ##  ##       ##       ##    ##    ##    ## ##       ##    ## 
+ ######  ##    ## #### ######## ########  ######      ######  ########  ###### 
+ */
+
+.skill-title{
+	position: absolute;
+	width: 100%;
+	top: 14%;
+}
+
+.skill-title img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.skill-list{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 20vh;
+	text-align: center;
+	transform: translate(0,-50%);
+}
+
+.skill-list figure{
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	min-width: 5rem;
+	width: 12%;
+
+}
+
+.skill-list figure img{
+	position: relative;
+	min-width: 5rem;
+	width: 45%;
+}
+
+ .skill-list figure figcaption{
+ 	text-align: center;
+ 	font-size: calc(12px + 0.2rem);
+   margin-top: 20px;
+ }
+
+.resume-button{
+	width: 100%;
+	text-align: center;
+	top: 82%;
+	transform: translate(0,-50%);
+}
+
+.resume-button button{
+	border:0; 
+	padding: 1em;
+	border-radius: 8px;
+	width: 200px;
+	color: #fff; 
+	background: #f7484e;
+	font-family: 'Merriweather', sans-serif;
+	cursor: pointer;
+	box-shadow: 0 1px 1px rgb(255,255,255);
+	resize: none;
+}
+
+.resume-button button:hover {
+		background: #f86368;
+	}
+
 
 /*
 ##      ##  #######  ########  ##    ##     ######  ########  ######  
@@ -308,9 +397,10 @@ p a{
  	width: 100%;
  	height: 100vh;
  	overflow-x: hidden;
- 	-webkit-box-shadow: inset 0px -47px 86px -44px rgba(0,0,0,0.41);
-   -moz-box-shadow: inset 0px -47px 86px -44px rgba(0,0,0,0.41);
-   box-shadow: inset 0px -47px 86px -44px rgba(0,0,0,0.41);
+ 	/* Shadow in each project container */
+ 	-webkit-box-shadow: inset 0 -47px 86px -44px rgba(0,0,0,0.41);
+   -moz-box-shadow: inset 0 -47px 86px -44px rgba(0,0,0,0.41);
+   box-shadow: inset 0 -47px 86px -44px rgba(0,0,0,0.41);
  }
 
  .project-img img {
@@ -326,15 +416,15 @@ p a{
  	width: 100%;
  }
 
- .project-text h1{
+ h2{
  	margin: 0;
  	text-align: center;
- 	font-size: 1.6rem;
+ 	font-size: 1.5rem;
  	color: red;
  	padding-top: 18px;
  }
 
- .project-text h2{
+ h4{
  	text-align: center;
  	font-size: 1.2rem;
  	color: #000;
@@ -392,10 +482,6 @@ p a{
  	position: absolute;
  	width: 100%;
  	top: 12.5%;
- }
-
- .contact-title h2{
- 	visibility: hidden;
  }
 
  .contact-title img{
