@@ -59,9 +59,11 @@ Temporary Items
 *.png
 *.gif
 *.ico
+*.svg
+*.pdf
 archive
 HW_Week 1
 HW_Week 2
 HW_Week 3
-portfolio/images
-portfolio/downloads
+images
+downloads
